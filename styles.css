@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f8ff;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  header {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  #event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input, button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #event-listing {
+    max-width: 600px;
+  }
+  
+  .event {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event h3 {
+    color: #333;
+  }
+  
+  .event p {
+    color: #555;
+  }
+  
+  /* Blob Style */
+  .blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(135deg, #6e72fc, #ad1deb);
+    border-radius: 50%;
+    top: -200px;
+    left: -200px;
+    z-index: -1;
+    filter: blur(200px);
+    animation: blob 20s infinite alternate;
+  }
+  
+  @keyframes blob {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    100% {
+      transform: translate(300px, 200px) scale(1.2);
+    }
+  }
+  
