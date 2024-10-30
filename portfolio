@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Custom Google Fonts -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .left {
+            width: 35%; /* Adjust width for the left column */
+            background-color: #2c3c4e;
+            color:	#FFFDD0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .left img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid white; /* White border around the avatar */
+        }
+        .left h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .left p {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .left a {
+            color: white;
+            text-decoration: none;
+            background-color: #fff;
+            color: #4A90E2;
+           padding: 10px 20px;
+            border-radius: 20px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .left a:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        .right {
+            width: 65%; /* Adjust width for the right column */
+            padding: 40px;
+            background-color: 	#FFFDD0;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .section h2::after {
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color:#333;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills ul li {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .skills ul li:hover {
+            background-color: #e0e0e0;
+        }
+        .experience, .education {
+            border-left: 4px solid #333;
+            padding-left: 20px;
+        }
+        .experience p, .education p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .experience strong, .education strong {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(135deg, #f4f4f4, #333);
+    border-radius: 50%;
+    top: -200px;
+    left: -200px;
+    z-index: -1;
+    filter: blur(200px);
+    animation: blob 20s infinite alternate;
+  }
+  
+  @keyframes blob {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    100% {
+      transform: translate(300px, 200px) scale(1.2);
+    }
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Column -->
+        <div class="left">
+            <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Your Avatar">
+            <h1>Chahat Jain</h1>
+            <p>Email: Jainchahat0406@gmail.com</p>
+            <p>Phone: 9893030983</p>
+       
+            <p>A highly motivated Computer Science student with a passion for cybersecuirty and with a keen interest in enhancing security measures and user experiences through innovative solutions..</p>
+            <a href="https://linkedin.com">LinkedIn Profile</a>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right">
+            <!-- Skills Section -->
+            <div class="section skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Front-end Web Development</li>
+                    <li>Ethical Hacking</li>
+                    <li>Cryptography</li>
+                    <li>Desgin Thinking</li>
+                    <li>Problem Solving</li>
+                    <li>Languages:C,C++ </li>
+                </ul>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="section experience">
+                <h2>Experience</h2>
+                <p><strong>Projects:</strong> 
+                Built an portfolio using HTML,CSS,JAVASCRIPT.</p>
+                <P><strong>Certifications: </strong>
+                    Front-end Web Development
+                ,
+            CEH:Ethical Hacking(ongoing)</P>
+                
+            </div>
+
+            <!-- Education Section -->
+            <div class="section education">
+                <h2>Education</h2>
+                <p><strong>B.Tech in Computer Science</strong> - Your University</p>
+                <p>4th Semester, Expected Graduation: 2026</p>
+                <p>Relevant Coursework: Web Development, Data Structures, Algorithms</p>
+            </div>
+        </div>
+        <div class="blob"></div>
+    </div>
+
+    
+</body>
+</html>
